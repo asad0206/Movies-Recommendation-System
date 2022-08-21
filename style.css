@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root
+{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family : 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    background-image: url("Movie recommendation system.png");
+    background-size: cover;
+    background-color: #2A313A;
+    overflow-x: hidden;
+}
+header{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 90%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:1000;
+}
+header .logo{
+    color:#fff;
+    font-weight:700;
+    text-decoration:none;
+    font-size:2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+header ul {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+header ul li {
+    list-style: none;
+    margin-left:20px;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px ;
+    color:#fff;
+    border-radius: 20px;
+
+}
+header ul li a:hover,header ul li a.active
+{
+    background: #fff;
+    color: #2b1055;
+}
+.content{
+  position: absolute;
+  top: 200px;
+  color: #ececec;
+  font-size: 25px;
+  letter-spacing: 0.03em;
+}
+
+form.topnav input[type=text] {
+  padding: 6px 100px 6px 5px;
+  border: none;
+  font-size: 17px;
+  position: absolute;
+  left: 15.5%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+
+
+}
+form.topnav button{
+  padding: 6px ;
+  border: none;
+  font-size: 17px;
+  position: absolute;
+  left: 24%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  background-color:#fff;
+}

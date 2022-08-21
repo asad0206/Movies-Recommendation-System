@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Movie Recommendations Engine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  :root
+  {
+      margin: 0;
+      padding:0;
+      box-sizing: border-box;
+      font-family : 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+      
+  }
+  body{
+      min-height: 100vh;
+      margin-top: 10%;
+      padding-top: 30px;
+      background-size: cover;
+      /* background-color: rgb(19, 29, 37); */
+      background-blend-mode: lighten;
+      overflow-x: hidden;
+      background: linear-gradient(-45deg, #29292a, #db3d3d, #5b23d5, #0e9287);
+  background-size: 300% 400%;
+  animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+  
+}
+  header{
+      /* background-color: #077f8f; */
+      position:absolute;
+      top:0;
+      left:0;
+      width: 90%;
+      padding: 10px 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index:1000;
+  }
+  header .logo{
+      color:#fff;
+      /* font-weight:700; */
+      text-decoration:none;
+      font-size:2em;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+
+  }
+  header ul {
+      display: flex;
+      justify-content:center;
+      align-items: center;
+  }
+  header ul li {
+      list-style: none;
+      margin-left:20px;
+  }
+  header ul li a{
+      text-decoration: none;
+      padding: 6px 15px ;
+      color:#fff;
+      border-radius: 20px;
+
+  }
+  header ul li a:hover,header ul li a.active
+  {
+      background: #fff;
+      color: #2b1055;
+  }
+  .content{
+    position: absolute;
+    margin-left: 20%;
+    top: 200px;
+    color: #ececec;
+    font-size: 25px;
+    letter-spacing: 0.03em;
+  }
+  .search {
+      width: 100%;
+      position: relative;
+      display: flex;
+    }
+    
+    .searchTerm {
+      width: 100%;
+      /* border: 3px solid #00B4CC; */
+      border-right: none;
+      padding: 5px;
+      height: 30px;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+      color: #9DBFAF;
+    }
+    
+    .searchTerm:focus{
+      color: #00B4CC;
+    }
+    
+    .searchButton {
+      width: 40px;
+      height: 46px;
+      border: 1px solid #00B4CC;
+      background: #00B4CC;
+      text-align: center;
+      color: #fff;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+      font-size: 20px;
+    }
+    .heading{
+      color: #fff;
+      width: 70%;
+      position: absolute;
+      top: 32%;
+      left: 26%;
+    }
+    
+    .wrap{
+      width: 40%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+ 
+
+    </style>
+  </head>
+  <body class=".radial" >
+
+    <header>
+      <a href="#" class="logo">Movie Recommandations Engine</a>
+      <ul>
+          <li><a href="#" class= "active">About</a></li>
+          <li><a href="#">Contact Us</a></li>
+      </ul>
+  </header> 
+  <h1 class="heading">Enter Your Favourite Movie and Get Recommendations</h1>
+  <div class="wrap" >
+    <div class="search">
+      <form method ="POST", action="{{url_for('home')}}" class = "search">
+            <input type="text", name="movie", placeholder="Enter movie name" class="searchTerm">
+            <button type="submit" class="searchButton">
+            <i class="fa fa-search"></i>
+           </button>
+      </form>
+    </div>
+  </div>
+  </body>
+</html>

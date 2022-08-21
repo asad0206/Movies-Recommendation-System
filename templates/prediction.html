@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+               @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  :root
+  {
+      margin: 0;
+      padding:0;
+      box-sizing: border-box;
+      font-family : 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+      background-color: rgb(19, 29, 37);
+      color:#fff;
+
+  }
+  body{
+    padding: 10px 100px;
+    background-blend-mode: lighten;
+      overflow-x: hidden;
+      background: linear-gradient(-45deg, #29292a, #db3d3d, #5b23d5, #0e9287);
+  background-size: 300% 400%;
+  animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+    
+  }
+  
+  header{
+      /* background-color: #077f8f; */
+      position:absolute;
+      top:0;
+      left:0;
+      width: 90%;
+      padding: 10px 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index:1000;
+  }
+  header .logo{
+      color:#fff;
+      /* font-weight:700; */
+      text-decoration:none;
+      font-size:2em;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+
+  }
+  header ul {
+      display: flex;
+      justify-content:center;
+      align-items: center;
+  }
+  header ul li {
+      list-style: none;
+      margin-left:20px;
+  }
+  header ul li a{
+      text-decoration: none;
+      padding: 6px 15px ;
+      color:#fff;
+      border-radius: 20px;
+
+  }
+  header ul li a:hover,header ul li a.active
+  {
+      background: #fff;
+      color: #2b1055;
+  }
+  table .table_body{
+      border: 1px;
+      border-color: #fff;
+      padding: 10px 100px;
+  }
+  .heading{
+
+    margin-top: 100px;
+  }
+
+        </style>
+     <header>
+        <a href="#" class="logo">Movie Recommandations Engine</a>
+        <ul>
+            <li><a href="#" class= "active">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </header> 
+    <body>
+       <h1 class="heading">Recommended Movies for {{moviename}}</h1>
+       <table>
+        <!-- {{mov}} -->
+        <tbody class="table_body">
+            <tr>
+                <td>Name</td>
+                <td>Genres</td>
+                <td>Synopsis</td>
+            </tr>
+            <tr>
+                <td>{{ movie_names[0] }}</td>
+                <td>{{ movie_genres[0] }}</td>
+                <td>{{ movie_links[0] }}</td>
+            </tr>
+            <tr>
+                <td>{{ movie_names[1] }}</td>
+                <td>{{ movie_genres[1] }}</td>
+                <td>{{ movie_links[1] }}</td>
+            </tr>
+            <tr>
+                <td>{{ movie_names[2] }}</td>
+                <td>{{ movie_genres[2] }}</td>
+                <td>{{ movie_links[2] }}</td>
+            </tr>
+            <tr>
+                <td>{{ movie_names[3] }}</td>
+                <td>{{ movie_genres[3] }}</td>
+                <td>{{ movie_links[3] }}</td>
+            </tr>
+            <tr>
+                <td>{{ movie_names[4] }}</td>
+                <td>{{ movie_genres[4] }}</td>
+                <td>{{ movie_links[4] }}</td>
+            </tr>
+            <tr>
+                <td>{{ movie_names[5] }}</td>
+                <td>{{ movie_genres[5] }}</td>
+                <td>{{ movie_links[5] }}</td>
+            </tr>
+            <tr>
+                <td>{{ movie_names[6] }}</td>
+                <td>{{ movie_genres[6] }}</td>
+                <td>{{ movie_links[6] }}</td>
+            </tr>
+            <tr>
+                <td>{{ movie_names[7] }}</td>
+                <td>{{ movie_genres[7] }}</td>
+                <td>{{ movie_links[7] }}</td>
+            </tr>
+            <tr>
+                <td>{{ movie_names[8] }}</td>
+                <td>{{ movie_genres[8] }}</td>
+                <td>{{ movie_links[8] }}</td>
+            </tr>
+            <tr>
+                <td>{{ movie_names[9] }}</td>
+                <td>{{ movie_genres[9] }}</td>
+                <td>{{ movie_links[9] }}</td>
+            </tr>
+        </tbody>
+       </table>
+       
+    <br>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    
+        
+        <script src="" async defer></script>
+    </body>
+</html>
