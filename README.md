@@ -301,15 +301,11 @@ _Figure 6 Graph representing the movie count of different directors_
 
 A front end for the recommendation system has been created which displays the recommendations. The user enters an input (name of the movie) into the search bar which makes a query to the backend. The results of the recommendation are displayed on the web page.
 
-![Graphical user interface, text, application
-
-Description automatically generated](Aspose.Words.b3b2922a-bbea-468d-8499-819230b179f7.012.png)
+![Graphical user interface, text, application Description automatically generated](/README/Aspose.Words.b3b2922a-bbea-468d-8499-819230b179f7.012.png)
 
 _Figure 7 Input page of the web application_
 
-![Text
-
-Description automatically generated](Aspose.Words.b3b2922a-bbea-468d-8499-819230b179f7.013.png)
+![Text Description automatically generated](/README/Aspose.Words.b3b2922a-bbea-468d-8499-819230b179f7.013.png)
 
 _Figure 8 Movies recommended by the engine_
 
